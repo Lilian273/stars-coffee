@@ -21,10 +21,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/site.js" defer></script>
+    <script src="js/menu-data.js" defer></script>
+    <script src="js/menu.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -73,53 +75,9 @@
         <div class="block-inner menu-block">
           <p class="eyebrow">The Stars Selection</p>
           <h2>Made to savor.</h2>
-          <div class="menu-grid">
-            <article class="menu-card">
-              <div class="menu-photo">
-                <img src="https://framerusercontent.com/images/o2PNMGCi32Krg43RB3qpGLlEzT0.jpg?width=1000" alt="Barista pouring latte art" width="1000" height="667" loading="lazy" />
-              </div>
-              <div class="menu-details">
-                <p class="eyebrow card-eyebrow">Crafted Coffee</p>
-                <h3>Specialty Coffee</h3>
-                <p class="card-desc">Espresso, silky milk, and carefully sourced beans.</p>
-                <p class="price">₪ —</p>
-              </div>
-            </article>
-            <article class="menu-card">
-              <div class="menu-photo">
-                <img src="https://framerusercontent.com/images/64FC1TSYx75tg1N4VRpQuukWaBc.jpg?width=1000" alt="Coffee cup on wooden table" width="1000" height="667" loading="lazy" />
-              </div>
-              <div class="menu-details">
-                <p class="eyebrow card-eyebrow">Cool &amp; Refreshing</p>
-                <h3>Iced Drinks</h3>
-                <p class="card-desc">Cold brews and chilled favorites for a brighter day.</p>
-                <p class="price">₪ —</p>
-              </div>
-            </article>
-            <article class="menu-card">
-              <div class="menu-photo">
-                <img src="https://framerusercontent.com/images/BcAhofmn7T0WE8b0GskABSlJdA.jpg?width=1000" alt="Waffle served with ice cream" width="1000" height="667" loading="lazy" />
-              </div>
-              <div class="menu-details">
-                <p class="eyebrow card-eyebrow">Sweet Favorites</p>
-                <h3>Signature Waffles</h3>
-                <p class="card-desc">Golden waffles dressed for the occasion.</p>
-                <p class="price">₪ —</p>
-              </div>
-            </article>
-            <article class="menu-card">
-              <div class="menu-photo">
-                <img src="https://framerusercontent.com/images/TfHmnKT0a3eiDYFcmzVYX1Y7mY.jpg?width=1000" alt="Waffles with fruit and ice cream" width="1000" height="667" loading="lazy" />
-              </div>
-              <div class="menu-details">
-                <p class="eyebrow card-eyebrow">The Final Touch</p>
-                <h3>Desserts</h3>
-                <p class="card-desc">A little indulgence to make the moment last.</p>
-                <p class="price">₪ —</p>
-              </div>
-            </article>
-          </div>
-          <p class="menu-disclaimer">Prices shown as placeholders. Update the menu before publishing.</p>
+          <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Menu categories"></div>
+          <div class="menu-panels" id="menuPanels"></div>
+          <p class="menu-disclaimer">All prices in Israeli shekels (₪). Ask our team about seasonal additions.</p>
         </div>
       </section>
 

@@ -12,6 +12,14 @@ stars-coffee/
 └── BACKEND/      API / server (placeholder)
 ```
 
+## Editing the menu
+
+All menu content lives in `FRONTEND/js/menu-data.js`. Each category becomes a tab and each
+item becomes a card. For an item with several sizes, `sizes` and `prices` are matched by
+position, so the two lists must stay the same length.
+
+Individual categories are linkable: `/#menu-mojito` opens the site with that tab selected.
+
 ## Run locally
 
 From the project root:
