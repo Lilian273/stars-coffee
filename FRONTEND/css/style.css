@@ -107,11 +107,36 @@ button {
   gap: 1rem;
 }
 
+.logo-img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 52px;
+  object-fit: contain;
+  flex: none;
+}
+
+.logo-img--header {
+  max-height: 48px;
+  max-width: min(220px, 52vw);
+}
+
+.logo-img--about {
+  max-height: 96px;
+}
+
+.logo-img--footer {
+  max-height: 72px;
+}
+
+.logo-img--pill {
+  max-height: 30px;
+}
+
 .brand {
-  font-family: var(--display);
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
 }
 
 .site-nav {
@@ -340,6 +365,9 @@ h2 {
   right: 0;
   bottom: 0;
   padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -629,20 +657,15 @@ h2 {
   }
 }
 
-.footer-name {
-  font-family: var(--display);
-  font-size: 20px;
-  font-weight: 600;
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .footer-tag {
-  margin-top: 4px;
-}
-
-@media (max-width: 809px) {
-  .footer-tag {
-    display: none;
-  }
+  max-width: 28ch;
 }
 
 /* —— WhatsApp pill —— */

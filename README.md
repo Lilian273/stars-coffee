@@ -14,7 +14,16 @@ stars-coffee/
 
 ## Run locally
 
-Open `FRONTEND/index.html` in a browser, or use **Live Server** with `FRONTEND` as the root folder.
+From the project root:
+
+```bash
+npm install
+npm run dev
+```
+
+Opens the site at http://localhost:5173/ (Vite serves the `FRONTEND` folder).
+
+You can also open `FRONTEND/index.html` directly in a browser.
 
 ## Deploy
 

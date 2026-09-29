@@ -9,7 +9,6 @@
     <meta name="description" content="Specialty coffee, warm hospitality, and a little time to yourself in the heart of Nazareth." />
     <meta name="author" content="DEVBYLILIAN" />
 
-    <link rel="icon" type="image/svg+xml" href="assets/icons/icon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon-180.png" />
     <link rel="manifest" href="site.webmanifest" />
@@ -18,7 +17,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Stars Coffee" />
     <meta property="og:description" content="Where passion meets every cup." />
-    <meta property="og:image" content="https://YOUR-DOMAIN.com/assets/og-image.png" />
+    <meta property="og:image" content="https://YOUR-DOMAIN.com/assets/logo.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +29,9 @@
   <body>
     <header class="site-header">
       <div class="header-bar">
-        <a class="brand" href="#top">STARS COFFEE</a>
+        <a class="brand" href="#top">
+          <img class="logo-img logo-img--header" src="assets/logo.png" width="120" height="120" alt="Stars Coffee logo" />
+        </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
           <span></span><span></span>
         </button>
@@ -63,7 +64,7 @@
               height="1067"
               fetchpriority="high"
             />
-            <figcaption>STARS COFFEE · NAZARETH</figcaption>
+            <figcaption><span>NAZARETH</span></figcaption>
           </figure>
         </div>
       </section>
@@ -128,6 +129,7 @@
             <img src="https://framerusercontent.com/images/xGlPFVvJFbrWKD2q2uAuDuBzls.jpg?width=1600" alt="Barista preparing coffee by hand" width="1600" height="1067" loading="lazy" />
           </figure>
           <div class="about-copy">
+            <img class="logo-img logo-img--about" src="assets/logo.png" width="140" height="140" alt="Stars Coffee logo" />
             <p class="eyebrow">A Warm Welcome</p>
             <h2>A moment to stay awhile.</h2>
             <p class="body-text">Step in from the bustle of Nazareth and settle into something slower. The coffee is crafted with care, the seats are made for lingering, and there’s always room for one more conversation.</p>
@@ -179,16 +181,14 @@
     <footer class="site-footer">
       <div class="footer-bar">
         <div class="footer-brand">
-          <p class="footer-name">Stars Coffee</p>
+          <img class="logo-img logo-img--footer" src="assets/logo.png" width="140" height="140" alt="Stars Coffee logo" />
           <p class="body-text footer-tag">Where passion meets every cup.</p>
         </div>
       </div>
     </footer>
 
     <div class="wa-pill" aria-label="WhatsApp contact number coming soon">
-      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="#0F1115" d="M9 0C5.784 0 2.812 1.716 1.204 4.503-.403 7.289-.401 10.722 1.21 13.507l-1.169 3.505a.75.75 0 0 0 .951.948l3.506-1.169C7.77 18.686 11.881 18.328 14.781 15.897 17.681 13.466 18.75 9.481 17.457 5.925 16.164 2.368 12.785 0 9 0zm2.251 14.25c-4.142 0-7.5-3.358-7.5-7.5 0-1.657 1.343-3 3-3l1.5 3-1.155 1.732c.458 1.094 1.329 1.965 2.423 2.423L11.251 9.75 14.251 11.25c0 1.657-1.343 3-3 3z" transform="translate(3 3)" />
-      </svg>
+      <img class="logo-img logo-img--pill" src="assets/logo.png" width="72" height="72" alt="" />
       <span>WhatsApp soon</span>
     </div>
   </body>
